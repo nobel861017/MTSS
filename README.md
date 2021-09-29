@@ -2,6 +2,7 @@
 Transferability of Speech Separation with Meta-learning
 
 ## Speech Accent Archive
+Scripts to create the testing set speech mixtures.
 ## CommonVoice
 command line example
 ```
@@ -20,4 +21,5 @@ python3 mix_list_gen_cv_zh_3spk.py --data_dir /path/to/[output dir] \
 octave
 pkg load signal
 create_wav_2speakers
+create_wav_3speakers
 ```
