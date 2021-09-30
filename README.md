@@ -1,8 +1,9 @@
 # MTSS
-Transferability of Speech Separation with Meta-learning
+Transferability of Speech Separation with Meta-learning.
 
-## Speech Accent Archive
 Scripts to create the testing set speech mixtures.
+## Speech Accent Archive
+
 ## CommonVoice
 command line example
 ```
