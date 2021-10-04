@@ -19,6 +19,7 @@ python3 mix_list_gen_cv_zh_3spk.py --data_dir /path/to/[output dir] \
                               --lang [lang] \
                               --do_tt
 
+cd create-speaker-mixtures_cv_zh
 octave
 pkg load signal
 create_wav_2speakers
