@@ -4,16 +4,16 @@ Transferability of Speech Separation with Meta-learning.
 Scripts to create the testing set speech mixtures.
 
 ## CommonVoice
-Download languages zh-CN, zh-TW, zh-HK from https://commonvoice.mozilla.org/zh-TW/datasets.
+step 1: Download languages zh-CN, zh-TW, zh-HK from https://commonvoice.mozilla.org/zh-TW/datasets.
 
-Convert mp3 to wav
+step 2: Convert mp3 to wav
 ```
 python3 mp3_to_wav.py --data_dir /path/to/cv-corpus-6.1-2020-12-11/ \
                       --output_dir /path/to/common-voice-zh-split-4s \
                       --lang [lang] \
                       --split test
 ```
-Generate mix list
+step 3: Generate mix list
 
 2-speaker
 ```
@@ -27,16 +27,16 @@ python3 mix_list_gen_cv_zh_3spk.py --data_dir /path/to/common-voice-zh-split-4s 
                               --lang [lang] \
                               --do_tt
 ```
-Generate mixtures according to mix list
+step 4: Generate mixtures according to mix list
 ```
 cd create-speaker-mixtures_cv_zh
 octave
 pkg load signal
 
-# run the following two scripts for each language
 create_wav_2speakers
 create_wav_3speakers
 ```
+repeat step 3 and 4 for each language
 
 ## Speech Accent Archive
 Download Speech Accent Archive mp3 files from https://www.kaggle.com/rtatman/speech-accent-archive.
