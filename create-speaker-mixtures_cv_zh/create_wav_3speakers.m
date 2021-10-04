@@ -6,7 +6,7 @@
 
 %addpath('./voicebox')
 data_type = {'tt'};
-wsj0root = '/path/to/the/dir/containing/output_dir'; % YOUR_PATH/, the folder containing [output_dir]
+wsj0root = '/path/to/the/dir/containing/common-voice-zh-split-4s'; % YOUR_PATH/, the folder containing common-voice-zh-split-4s/
 output_dir8k='/path/to/mac-meta-mix-split-4s-cv-[lang]/3speakers/wav8k';
 
 min_max = {'min'}; %{'min','max'};
